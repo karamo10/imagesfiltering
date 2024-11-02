@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+.btns{
+    margin: 50px 75px;
+}
+.btns button{
+    padding: 8px 20px;
+    border: 0;
+    margin: 0 10px;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+}
+.btns .filter-btn.active{
+    background: rgb(54, 163, 163);
+    color: white;
+}
+.btns .filter-btn:hover{
+    background-color: rgb(54, 163, 163);
+}
+.container{
+    /* width: 800px; */
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item{
+    width: 100%;
+}
+.container img{
+   width: 100%; 
+}
